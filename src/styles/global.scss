@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #FFFFFF;
+    --grey: #f1f5f8;
+    --black: #4E5555;
+    --purple: #30107D;
+    --purpleLigth: #401A9B;
+    --green: #06D6A2;
+    --red:#e0537b;
+}
+
+@media (max-width: 1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px){
+    html{
+        font-size: 87.5%;
+    }
+}
+
+body{
+    background: var(--grey);
+    color: var(--black);
+}
+
+button{
+    cursor: pointer;
+}
