@@ -1,0 +1,71 @@
+.formContainer {
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 0 1.5rem;
+        height: 3.5rem;
+        border-radius: 8px;
+        background: var(--grey);
+        border: 1px solid var(--grey-200);
+
+        font-weight: 400;
+        font-size: 1rem;
+
+        &::placeholder {
+            color: var(--grey-200);
+        }
+
+        &+input {
+            margin-top: 1rem;
+        }
+    }
+
+    button[type='submit'] {
+        margin-top: 1rem;
+        width: 100%;
+        background: var(--purpleLight);
+        color: var(--white);
+    }
+}
+
+.btnClose {
+    background: transparent;
+    box-shadow: none;
+    padding: 0.5rem;
+
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.typeTransactionContainer {
+    margin: 1rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    gap: 1rem;
+
+    button {
+        background: var(--white);
+        border: 1px solid var(--grey-200);
+        font-weight: 500;
+        font-size: 1rem;
+        box-shadow: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .cashIncome {
+        background: rgb(6, 214, 162, 0.3);
+    }
+
+    .cashOutflow {
+        background: rgb(224,83,123, 0.3);
+    }
+}

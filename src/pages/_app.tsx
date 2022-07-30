@@ -1,13 +1,12 @@
 import { AppProps } from 'next/app'
-import Header from '../components/Header';
 import '../styles/global.scss'
+import Modal from 'react-modal';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  Modal.setAppElement("#__next");
+  
   return (
-    <>
-      <Header />
-      <Component {...pageProps} />
-    </>
+    <Component {...pageProps} />
   );
 }
 

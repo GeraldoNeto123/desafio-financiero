@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import Header from '../components/Header';
+import Summary from '../components/Summary'
+import TableTransactions from '../components/TableTransactions';
+import { TransactionProvider } from '../hooks/useTransaction';
 
 export default function Home() {
 
@@ -7,7 +11,14 @@ export default function Home() {
       <Head>
         <title>Home | Desafio Financeiro</title>
       </Head>
-      <h1>Home</h1>
+
+      <TransactionProvider>
+        <Header />
+        <div className='container'>
+          <Summary />
+          <TableTransactions />
+        </div>
+      </TransactionProvider>
     </>
   );
 }
